@@ -5,47 +5,172 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejemplo de HTML y CSS</title>
     <style>
-        /* Estilos CSS */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
+      /* styles.css */
 
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
+      /* Estilos generales */
+      body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #00FF7F;
+      
+    }
 
-        section {
-            padding: 20px;
-            margin: 20px;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
 
-        h1 {
-            color: #333;
-        }
+/* Estilos del encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
 
-        p {
-            color: #666;
-            line-height: 1.6;
-        }
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos de las secciones */
+section {
+    
+    padding: 40px 0;
+    
+}
+
+
+
+section h2 {
+    text-align: center;
+}
+
+.proyecto {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.proyecto h3 {
+    margin-top: 0;
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+ 
     </style>
 </head>
 <body>
     <header>
         <h1>Ejemplo de HTML y CSS</h1>
     </header>
-    <section>
+    <section id="contenido"> 
+       
         <h2>Contenido de la página</h2>
         <p>Este es un ejemplo básico de HTML y CSS.</p>
         <p>Puedes agregar más contenido aquí según sea necesario.</p>
     </section>
+    
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio Personal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Mi Portafolio Personal</h1>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobre-mi">Sobre Mí</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio">
+        <div class="container">
+            <h2>Bienvenido a mi Portafolio</h2>
+            <p>¡Hola! Soy [Tu Nombre], un apasionado de [Tu Campo]. Bienvenido a mi portafolio personal.</p>
+        </div>
+    </section>
+
+    <section id="sobre-mi">
+        <div class="container">
+            <h2>Sobre Mí</h2>
+            <p>Aquí puedes escribir un poco sobre ti, tu experiencia, habilidades, educación, etc.</p>
+        </div>
+    </section>
+
+    <section id="proyectos">
+        <div class="container">
+            <h2>Proyectos</h2>
+            <div class="proyecto">
+                <h3>Proyecto 1</h3>
+                <p>Descripción breve del proyecto 1.</p>
+            </div>
+            <div class="proyecto">
+                <h3>Proyecto 2</h3>
+                <p>Descripción breve del proyecto 2.</p>
+            </div>
+            <!-- Puedes agregar más proyectos según sea necesario -->
+        </div>
+    </section>
+
+    <section id="contacto">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p>Puedes contactarme a través de:</p>
+            <ul>
+                <li>Email: correo@example.com</li>
+                <li>Teléfono: (123) 456-7890</li>
+                <!-- Puedes agregar más formas de contacto aquí -->
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Derechos de autor © 2024 - [Tu Nombre]</p>
+        </div>
+    </footer>
+</body>
+</html>
+
 </body>
 </html>
